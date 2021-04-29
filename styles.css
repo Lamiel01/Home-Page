@@ -1,0 +1,135 @@
+* {
+    background-color: #2c342c;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    width: 7vh;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #3afeba;
+}
+
+button {
+    padding: 9px 25px;
+    color: white;
+    background-color: #D75726;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #3afeba;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.flex-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.flex-container div {
+    width: 130px;
+    margin: 10px;
+    text-align: center;
+    line-height: 60vh;
+    border: 2px solid#3afeba;
+    font-size: 5vh;
+}
+
+.search-bar nav input {
+    display: flex;
+    padding: 8px 15px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar nav input {
+    border: 2px solid #D75726;
+    border-radius: 50px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.search-text:focus {
+    outline: none;
+}
+
+p {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    font-family: 'Exo 2', sans-serif;
+    padding-left: 4vh;
+    font-size: 3vh;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+      background-color: transparent;
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+      transform: rotate(5deg);
+      background-color: transparent;
+    }
+
+    95% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+        transform: rotate(90deg);
+        background-color: transparent;
+      }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+      background-color: transparent;
+    }
+}
